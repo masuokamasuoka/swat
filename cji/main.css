@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+.header{
+    background: pink;
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.header_logo{
+    text-align: left;
+}
+
+.header_text h1{
+    font-size: 72px;
+}
+.header_text h2{
+    font-size: 52px;
+}
+
+.header_bl_cent{
+    color: black;
+    font-size: 20px;
+}
+
+.header_text{
+    font-size: 27px;
+    color: white;
+}
+
+.main{
+    background:green;
+}
+
+.first_cent{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.list_check{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.list_check a{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 0 0 60px;
+    position: relative;
+}
+
+.list_check a:before{
+    content: "";
+    display: block;
+    width: 28px;    
+    height: 28px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+.footer{
+    background-color: red;
+}
+
