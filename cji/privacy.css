@@ -1,4 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+/*ハンバーガー*/
+.menu-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  background:white;
+  color: black;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #FEF4F2;
+}
+.menu__item{
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+}
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+/*ハンバーガー*/
+
+body{
+    margin:0 ;
+    padding:0;
+    background-color: #FEF4F2;
+}
+
+.title_banner{
+    text-align: center;
+    margin: 10% 0;
+}
+
+.title_banner img{
+    width: 70%;
+}
 
 .first_cent{
     margin-left: 10%;
@@ -9,4 +78,86 @@
     margin-left: 10%;
     width: 80%;
     line-height: 300%;
+}
+
+.foot_banner{
+    text-align: center;
+    margin: 10% 0;
+}
+
+img{
+    width: 70%;
+}
+
+/*フッター*/
+.footer{
+    background-color: #F8D5D8;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.foot_logo{
+    padding: 3% 3% 0 3%;
+    text-align: center;
+}
+
+.foot_logo img{
+    width: 70%;
+}
+
+.foot_logo img{
+    width: 25vw;
+}
+
+.foot_list ul{
+    padding: 0;
+    margin-left: 10%;
+}
+
+.foot_list li{
+    display: inline-block;
+    width: 32%;
+    margin: 1% 0;
+    list-style-type: none;
+    margin-left: 10%;
+}
+
+/*フッターレスポンシブル*/
+@media screen and (max-width: 768px){
+    .footer{
+        background-color: #F8D5D8;
+        display: block;
+    }
+    .foot_logo{
+        padding: 5% 0 0 0;
+        text-align: center;
+    }
+
+    .foot_list ul{
+        margin: 0;
+        text-align: center;
+    }
+
+    .foot_list li{
+        display: block;
+        width: 100%;
+        padding: 3% 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .title_banner{
+        margin-top: 20%;
+    }
+    .first_cent{
+        margin-left: 5%;
+        width: 90%;
+    }
+    .main_cent{
+        margin-left: 5%;
+        width: 90%;
+        line-height: 150%;
+    }
 }
