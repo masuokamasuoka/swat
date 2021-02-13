@@ -73,6 +73,23 @@ body{
     margin: 5%;
 }
 
+.line{
+    border-top: solid 1px black;
+    position: relative;
+}
+
+.line::after{
+    content: "";
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -0.5px;
+    width: 30%;
+    border-top: 2px solid #FF73AA;
+}
+
 .disposer_banner{
     text-align: center;
     margin: 10% 0;
@@ -129,6 +146,11 @@ img{
 
 .foot_logo img{
     width: 25vw;
+}
+
+.foot_list{
+    background-image: url("img/foot-background.png");
+    background-size: contain;
 }
 
 .foot_list ul{

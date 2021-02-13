@@ -55,7 +55,7 @@
 /*ハンバーガー*/
 
 body{
-    margin:0 ;
+    margin: 0;
     padding:0;
     background-color: #FEF4F2;
 }
@@ -71,6 +71,23 @@ body{
 
 .title{
     margin: 5%;
+}
+
+.line{
+    border-top: solid 1px black;
+    position: relative;
+}
+
+.line::after{
+    content: "";
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -0.5px;
+    width: 30%;
+    border-top: 2px solid #FF73AA;
 }
 
 td{
@@ -115,6 +132,11 @@ img{
 
 .foot_logo img{
     width: 25vw;
+}
+
+.foot_list{
+    background-image: url("img/foot-background.png");
+    background-size: contain;
 }
 
 .foot_list ul{
