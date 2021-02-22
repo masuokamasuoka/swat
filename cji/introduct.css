@@ -131,6 +131,7 @@ body{
 
 .word{
     display: flex;
+    align-items: center;
 }
 
 .word_title{
@@ -154,6 +155,9 @@ body{
 /*フッター*/
 .footer{
     background-color: #F8D5D8;
+    background-image: url("img/foot-background.png");
+    background-size: contain;
+    background-position: center;
     display: flex;
     margin: 0;
     padding: 0;
@@ -164,17 +168,19 @@ body{
     text-align: center;
 }
 
-.foot_logo img{
-    width: 70%;
-}
-
-.foot_logo img{
-    width: 25vw;
+.foot_list img{
+    width: 50%;
+    margin-left: 10%;
 }
 
 .foot_list{
-    background-image: url("img/foot-background.png");
-    background-size: contain;
+    width: 100vw;
+}
+
+.foot_list p{
+    color: #5E9CD1;
+    text-shadow: 1px 1px 2px gray;
+    margin-left: 5%;
 }
 
 .foot_list ul{
@@ -183,11 +189,14 @@ body{
 }
 
 .foot_list li{
-    display: inline-block;
-    width: 32%;
+    line-height: 200%;
+    display: list-item;
     margin: 1% 0;
-    list-style-type: none;
-    margin-left: 10%;
+    margin-left: 5%;
+}
+
+.res_foot_contact{
+    display: none;
 }
 
 /*フッターレスポンシブル*/
@@ -203,7 +212,6 @@ body{
 
     .foot_list ul{
         margin: 0;
-        text-align: center;
     }
 
     .foot_list li{
@@ -211,6 +219,20 @@ body{
         width: 100%;
         padding: 3% 0;
         margin-left: 0;
+    }
+    
+    .foot_list img{
+        display: none;
+    }
+
+    .res_foot_contact img{
+        width: 60%;
+    }
+    
+    .res_foot_contact{
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
     }
 }
 

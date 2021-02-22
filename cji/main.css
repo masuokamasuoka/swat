@@ -4,12 +4,14 @@ body{
     margin:0 ;
     padding:0;
     background-color: #FEF4F2;
+    font-family: "筑紫A丸ゴシック";
 }
 
 .header{
     background: rgba(255, 115, 170, 1);
     display: flex;
-    /*justify-content: center;*/
+    align-items: center;
+    justify-content: center;
     width:100vw;
     height:90vh;
 }
