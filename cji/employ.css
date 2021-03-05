@@ -59,6 +59,7 @@ body{
   padding: 0;
   margin: 0;
   background-color: #FEF4F2;
+  font-family: "筑紫A丸ゴシック";
 }
 
 .title_banner{
@@ -71,7 +72,8 @@ body{
 }
 
 .title{
-    margin: 5%;
+    font-size: 20px;
+    margin: 2% 10%;
 }
 
 .line{
@@ -97,12 +99,17 @@ body{
     display: block;
 }
 
+.cent{
+    display: inline-block;
+    text-align: left;
+}
+
 .employ_img{
     text-align: center;
     margin: 10% 0;
 }
 
-img{
+.employ_img img{
     width: 70%;
 }
 
@@ -121,7 +128,7 @@ td{
     margin: 10% 0;
 }
 
-img{
+.foot_banner img{
     width: 70%;
 }
 
@@ -129,40 +136,46 @@ img{
 /*フッター*/
 .footer{
     background-color: #F8D5D8;
+    background-image: url("img/foot-background.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    padding: 1% 0;
 }
 
 .foot_logo{
-    padding: 3% 3% 0 3%;
+    margin: 0 3%;
     text-align: center;
 }
 
-.foot_logo img{
-    width: 70%;
-}
-
-.foot_logo img{
-    width: 25vw;
+.foot_list img{
+    width: 50%;
 }
 
 .foot_list{
-    background-image: url("img/foot-background.png");
-    background-size: contain;
+    width: 100vw;
+    
+}
+
+.foot_list p{
+    color: #5E9CD1;
+    text-shadow: 1px 1px 2px gray;
 }
 
 .foot_list ul{
     padding: 0;
-    margin-left: 10%;
 }
 
 .foot_list li{
-    display: inline-block;
-    width: 32%;
+    line-height: 200%;
+    display: list-item;
     margin: 1% 0;
-    list-style-type: none;
-    margin-left: 10%;
+}
+
+.res_foot_contact{
+    display: none;
 }
 
 /*フッターレスポンシブル*/
@@ -170,6 +183,7 @@ img{
     .footer{
         background-color: #F8D5D8;
         display: block;
+        background-image: none;
     }
     .foot_logo{
         padding: 5% 0 0 0;
@@ -177,8 +191,8 @@ img{
     }
 
     .foot_list ul{
-        margin: 0;
         text-align: center;
+        margin: 0;
     }
 
     .foot_list li{
@@ -187,13 +201,19 @@ img{
         padding: 3% 0;
         margin-left: 0;
     }
-
-    .foot_banner{
-        margin: 10% 5%;
+    
+    .foot_list img{
+        display: none;
     }
 
-    .foot_banner_phonenumber{
-        font-size: 10px;
+    .res_foot_contact img{
+        width: 60%;
+    }
+    
+    .res_foot_contact{
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
     }
 }
 

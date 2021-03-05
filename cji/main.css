@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 body{
-    margin:0 ;
-    padding:0;
+    margin: 0;
+    padding: 0;
     background-color: #FEF4F2;
     font-family: "筑紫A丸ゴシック";
 }
@@ -47,6 +47,10 @@ body{
   align-items: center;
   justify-content: center;
   background: #FEF4F2;
+  font-size: 20px;
+  color: #fff;
+  background-image: url("img/hambger_img_background.png");
+  background-size: cover;
 }
 .menu__item{
   width: 100%;
@@ -452,8 +456,8 @@ hr{
     .process_box{
         display: block;
     }
-    .step{
-        margin-left: 6%;
+    .step p{
+        padding: 90px;
     }
 
     .process_ex{
